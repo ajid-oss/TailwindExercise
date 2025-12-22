@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6D28D9",
+              dark: "#0F172A",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-sans text-gray-800 scroll-smooth">
+    <!-- NAVBAR  -->
+    <header class="bg-white shadow fixed w-full z-50">
+      <div
+        class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4"
+      >
+        <h1 class="text-xl font-bold text-primary">EigaalServices</h1>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="#features" class="hover:text-primary">Features</a>
+          <a href="#testimonials" class="hover:text-primary">Testimonials</a>
+          <a href="#pricing" class="hover:text-primary">Pricing</a>
+          <a href="#contact" class="hover:text-primary">Contact</a>
+        </nav>
+
+        <!-- Mobile Button -->
+        <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <nav class="flex flex-col px-6 py-4 space-y-4 text-sm font-medium">
+          <a href="#features">Features</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Spacer -->
+    <div class="h-20"></div>
+
+    <!--  HERO  -->
+    <section
+      class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center py-28 px-6"
+    >
+      <h2 class="text-4xl sm:text-5xl xl:text-6xl font-bold mb-4">
+        Transform Your Business
+      </h2>
+      <p class="max-w-xl mx-auto text-base sm:text-lg opacity-90 mb-8">
+        Elevate your online presence with our cutting-edge solutions
+      </p>
+      <button
+        class="bg-white text-primary px-8 py-3 rounded-full font-semibold"
+      >
+        Get Started
+      </button>
+    </section>
+    <!--  FEATURES  -->
+    <section id="features" class="max-w-7xl mx-auto px-6 py-20">
+  <h3 class="text-3xl font-bold text-center mb-12">
+    Why Choose Eigaal Services
+  </h3>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Feature 1 -->
+    <div class="bg-white p-6 rounded-lg shadow text-center">
+      <div class="text-3xl mb-4">⚡</div>
+      <h4 class="font-semibold text-lg mb-3">Fast & Reliable</h4>
+      <p class="text-sm text-gray-600 leading-relaxed">
+        Eigaal Services delivers fast and reliable solutions designed to help
+        businesses operate smoothly, efficiently, and without unnecessary delays.
+      </p>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="bg-white p-6 rounded-lg shadow text-center">
+      <div class="text-3xl mb-4">🛡️</div>
+      <h4 class="font-semibold text-lg mb-3">Secure & Trusted</h4>
+      <p class="text-sm text-gray-600 leading-relaxed">
+        We prioritize security and trust by using modern standards and best practices
+        to protect your data and ensure peace of mind.
+      </p>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class="bg-white p-6 rounded-lg shadow text-center">
+      <div class="text-3xl mb-4">💎</div>
+      <h4 class="font-semibold text-lg mb-3">Quality & Support</h4>
+      <p class="text-sm text-gray-600 leading-relaxed">
+        Our focus on quality and dedicated support ensures you receive consistent,
+        professional service tailored to your business needs.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!--  TESTIMONIALS -->
+    <section id="testimonials" class="bg-gray-50 py-20 px-6">
+      <h3 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h3>
+
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="italic text-gray-700 mb-6">
+            "The best decision we made for our business. The results have been
+            incredible."
+          </p>
+
+          <div class="flex items-center space-x-4">
+            <img
+              src="https://i.pravatar.cc/100?img=34"
+              alt="John Smith"
+              class="w-12 h-12 rounded-full object-cover"
+            />
+            <div>
+              <p class="font-semibold">Juweia Ali</p>
+              <p class="text-sm text-gray-500">CEO, TechCorp</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="italic text-gray-700 mb-6">
+            "Outstanding service and support. They truly understand our needs."
+          </p>
+
+          <div class="flex items-center space-x-4">
+            <img
+              src="https://i.pravatar.cc/100?img=33"
+              alt="Sarah Johnson"
+              class="w-12 h-12 rounded-full object-cover"
+            />
+            <div>
+              <p class="font-semibold">Jama Farah</p>
+              <p class="text-sm text-gray-500">Founder, Design Studio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  PRICING -->
+    <section id="pricing" class="max-w-7xl mx-auto px-6 py-20">
+  <h3 class="text-3xl font-bold text-center mb-4">
+    Eigaal Services Pricing
+  </h3>
+  <p class="text-center text-gray-600 mb-12">
+    Simple, transparent plans for every business
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Starter -->
+    <div class="border rounded-lg p-8 text-center shadow hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2">Starter</h4>
+      <p class="text-4xl font-bold mb-6">$29<span class="text-base font-medium">/mo</span></p>
+
+      <ul class="text-left space-y-3 mb-8">
+        <li class="flex items-center gap-2">
+          <span class="text-green-600 font-bold">✔</span> Basic Features
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="text-green-600 font-bold">✔</span> 5 Projects
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="text-green-600 font-bold">✔</span> Basic Support
+        </li>
+      </ul>
+
+      <button class="bg-primary text-white w-full py-3 rounded">
+        Get Started
+      </button>
+    </div>
+
+    <!-- Professional -->
+    <div class="border-2 border-primary rounded-lg p-8 text-center shadow-lg scale-105">
+      <h4 class="text-xl font-semibold mb-2">Professional</h4>
+      <p class="text-4xl font-bold mb-6">$99<span class="text-base font-medium">/mo</span></p>
+
+      <ul class="text-left space-y-3 mb-8">
+        <li class="flex items-center gap-2">
+          <span class="text-green-600 font-bold">✔</span> Advanced Features
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="text-green-600 font-bold">✔</span> Unlimited Projects
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="text-green-600 font-bold">✔</span> Priority Support
+        </li>
+      </ul>
+
+      <button class="bg-primary text-white w-full py-3 rounded">
+        Get Started
+      </button>
+    </div>
+
+    <!-- Enterprise -->
+    <div class="border rounded-lg p-8 text-center shadow hover:shadow-lg transition">
+      <h4 class="text-xl font-semibold mb-2">Enterprise</h4>
+      <p class="text-4xl font-bold mb-6">$299<span class="text-base font-medium">/mo</span></p>
+
+      <ul class="text-left space-y-3 mb-8">
+        <li class="flex items-center gap-2">
+          <span class="text-green-600 font-bold">✔</span> Custom Features
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="text-green-600 font-bold">✔</span> Dedicated Support
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="text-green-600 font-bold">✔</span> SLA Agreement
+        </li>
+      </ul>
+
+      <button class="bg-primary text-white w-full py-3 rounded">
+        Contact Sales
+      </button>
+    </div>
+
+  </div>
+</section>
+
+    <!--  CONTACT  -->
+    <section id="contact" class="bg-gray-50 py-20 px-6">
+      <h3 class="text-3xl font-bold text-center mb-12">Get in Touch</h3>
+
+      <form class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow space-y-4">
+        <input class="w-full border p-3 rounded" placeholder="Name" />
+        <input class="w-full border p-3 rounded" placeholder="Email" />
+        <textarea
+          class="w-full border p-3 rounded h-32"
+          placeholder="Message"
+        ></textarea>
+        <button class="bg-primary text-white w-full py-3 rounded">
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- FOOTER  -->
+   <footer class="bg-slate-900 text-gray-400 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+    <!-- Company -->
+    <div>
+      <h4 class="text-white text-lg font-semibold mb-3">
+        Eigaal Services
+      </h4>
+      <p class="text-sm leading-relaxed">
+        Transform your business with our cutting-edge solutions.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-white text-lg font-semibold mb-3">
+        Quick Links
+      </h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#features" class="hover:text-white">Features</a></li>
+        <li><a href="#testimonials" class="hover:text-white">Testimonials</a></li>
+        <li><a href="#pricing" class="hover:text-white">Pricing</a></li>
+        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Legal -->
+    <div>
+      <h4 class="text-white text-lg font-semibold mb-3">
+        Legal
+      </h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Connect -->
+    <div>
+      <h4 class="text-white text-lg font-semibold mb-3">
+        Connect
+      </h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white">Twitter</a></li>
+        <li><a href="#" class="hover:text-white">LinkedIn</a></li>
+        <li><a href="#" class="hover:text-white">Facebook</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Divider -->
+  <div class="border-t border-slate-700 mt-12 pt-6">
+    <p class="text-center text-xs text-gray-500">
+      © 2024 Eigaal Services. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+    <!-- JS  -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
